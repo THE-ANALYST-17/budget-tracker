@@ -1,0 +1,19 @@
+.exp_name_main_div{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly
+}
+.expensename_div p{
+    color: rgb(79, 77, 77);
+}
+.expensename_div span::before{
+    content: '';
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    font-weight: 700;
+    background: currentColor;
+    margin: 0 0.5rem;
+}
+

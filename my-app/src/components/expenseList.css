@@ -1,0 +1,91 @@
+.exp-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 23vw;
+    height: 30px;
+    /* background-color: white; */
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    /* background-color: yellow; */
+    /* opacity: 0.7; */
+}
+.expenseNameIcon{
+    width:3vw ;
+}
+.expenseNameIcon >p{
+    background:#094087;
+    width: 2vw ;
+    height: 30px;
+    text-align: center;
+    border-radius: 30%;
+    /* margin-left: -15px; */
+    color: whitesmoke;
+}
+.expensename_and_amount>p{
+    margin: -3px;
+}
+.expensename_and_amount{
+    width: 10vw;
+    position: relative;
+    /* right: 45px; */
+}
+.exp-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+.dbt-amt{
+    font-family: 'Lato', sans-serif;
+    color: red;
+    font-weight: 600;
+}
+.crdt-amt{
+    color: green;
+}
+.btn-div{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#dlt-btn{
+    width: 60px;
+    background-color: #094087;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  #edit-btn{
+    width: 60px;
+    background-color: #094087;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  #edit-btn:hover {animation: shaking 0.5s infinite;}
+      @keyframes shaking {
+         0% {transform: rotate(0deg);}
+         20% {transform: rotate(-4deg);}
+         50% {transform: rotate(0deg);}
+         70% {transform: rotate(4deg);}
+         100% {transform: rotate(0deg);}
+      }
+
+      #dlt-btn:hover {animation: shaking 0.5s infinite;}
+      @keyframes shaking {
+         0% {transform: rotate(0deg);}
+         20% {transform: rotate(-4deg);}
+         50% {transform: rotate(0deg);}
+         70% {transform: rotate(4deg);}
+         100% {transform: rotate(0deg);}
+      }

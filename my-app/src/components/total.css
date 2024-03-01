@@ -1,0 +1,26 @@
+.total-main{
+    width: 23vw;
+    height: 55vh;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  table {
+    width: 23vw;
+    border-collapse: collapse;
+    /* margin-top: -30px; */
+  }
+  
+  td,th {
+    border: 0.5px solid black;
+    text-align: center;
+    padding: 5px;
+    /* color: whitesmoke; */
+    font-family: sans-serif;
+  }
+  #total-head{
+    margin-top: -220px;
+  }

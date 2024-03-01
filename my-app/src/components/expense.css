@@ -1,0 +1,22 @@
+.exp-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 25.2vw;
+    /* height: 100px; */
+    /* padding: 7px; */
+    border-radius: 30px 30px;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.exp-main>h1 {
+    color: #094087;
+}
+
+.exp-main>p {
+    color: #094087;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
