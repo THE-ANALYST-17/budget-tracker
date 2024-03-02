@@ -23,11 +23,12 @@ const Inputdata = ({ expenseListUpdater, activeExpense }) => {
 
   //function to handle amount type -whether the amount is credited or debited
   const handleAmountType = (ev) => {
+    console.log('amount type',ev.target.value)
     setExpenseName((prevVal) => ({
       ...prevVal,
       amountType: ev.target.value,
     }));
-    console.log(ev.target.value)
+    
   };
 
   //function to handle expenseType
@@ -90,10 +91,10 @@ const Inputdata = ({ expenseListUpdater, activeExpense }) => {
             <select
               name="amount-type"
               id="amt-type"
-              // value={expenseName.amountType}
-              onClick={handleAmountType}
+              value={expenseName.amountType}
+              onChange={handleAmountType}
             >
-              {/* <option></option> */}
+              <option value="" disabled selected>Select an option</option>
               <option value={"Debited"}>Debited</option>
               <option value={"Credited"}>Credited</option>
             </select>
@@ -106,8 +107,10 @@ const Inputdata = ({ expenseListUpdater, activeExpense }) => {
             <select
               name="Expense-type"
               id="expn-type"
-              onClick={handleExpenseType}
+              value={expenseName.expenseType}
+              onChange={handleExpenseType}
             >
+              <option value="" disabled selected>Select an option</option>
               <option value={"Grocery"}>Grocery</option>
               <option value={"Shopping"}>Shopping</option>
               <option value={"Misc"}>Misc</option>
